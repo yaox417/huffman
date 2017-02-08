@@ -1,0 +1,22 @@
+CS5002 Final Writeup Instructions (Due December 6, 11pm)
+Zip all code that is necessary for your project (all .c files and possibly .h files if you wrote any) with a PDF containing your writeup, and submit on Blackboard where you found this PDF.
+Your writeup should contain the following information, in the order suggested here. 1. Overview
+What was your project supposed to do, again? This can be very brief -- you can assume I've read your proposal and just need a reminder of which project you're doing.
+2. Changes
+How did your project change from what you said you would do in your proposal? Did you fail to implement something that you hoped to achieve? Conversely, is there anything extra that you threw in that goes above and beyond what was expected?
+3. How to Use It
+Give, at the very least, an example of how a user could have a complete interaction with the program with the command line, showing both outputs and inputs. (Use > to indicate a command line prompt.) Then explain how the example demonstrates the more general pattern of how to interact with the program. For example, for a huffman compression project that involved a compression program called "huff" and a decompression program called "puff", you might write the following:
+> ./huff
+Enter filename to compress:  my_input.txt
+Compressing ... ok, wrote my_input.txt.huff
+> ./puff
+Enter filename to decompress:  my_input.txt.huff
+Decompressing ... ok, wrote my_input.txt
+The "huff" program asks for the filename of the file to compress, and writes a compressed file to disk with that filename plus a .huff extension. The puff program takes the name of a file to decompress that ends in .huff and writes to a filename without the .huff extension. The compression will work with any ASCII text file, but the decompression will only work with filenames that end with .huff.
+Notice how the instructions give some guidance as to what will and will not work with the program. Please do this if your program is expecting some particular kind of input.
+4. Results
+Here, you should provide some kind of data about how well your program works. If it's a huffman compression program: how well does it compress small files versus big files? If it's a web renderer: did you try it on any particular web pages, either of your own design or pulled from the web? How often does it seem to work? If it's a random number generator: how evenly distributed are the random numbers? If you wrote a queuing simulation or another kind of simulation, describe here some results from running the simulation, and how they compare to what you might theoretically expect from a mathematical model.
+5. Lessons Learned
+A little open-ended, but: what did you learn from this project? These can range from things you would do differently in planning, to new facts about the mathematics of random numbers and queues, to quirks of C. Try to go beyond the obvious (e.g., don't just say you learned how to do Huffman coding) -- see whether you can learn something by just thinking about your experience and what you might do differently next time.
+==> Depending on the length of your results section, this writeup may not be very long. A paragraph for each section is just fine for most projects, while a project with a heavier analysis component (like a queueing simulation or random number generator) may need a page or two for results.
+Good luck! You're almost there!

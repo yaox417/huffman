@@ -1,0 +1,9 @@
+I also found out some run time landmines in Racket - for example, the member? function that checks if an element is in a list is actually O(n) because it traverses the entire linked list. To avoid this in C, I took advantage of the speed of array indexing - I added an array of length 256 in the tree struct to track what elements is in a tree. 
+\newline \newline
+If I were to choose between C and Racket, I would choose C, because even though there are less readily available data structures made for me, I have a lot more control over the run time of the program. 
+
+\item This is the first time I worked with a real file in C. That was probably the most challenging part of the project. I found out about ASCII encoding vs. UNICODE. I discovered the usefulness of the seemingly useless bell character. I learnt hexdump. I learnt bit writing. I have come to appreciate simple, bare-bone text editors. 
+
+\item I have finally gotten a taste of the evils of scanf() - it leaves stuff in the buffer! So later if you want to get input again, you will be stuck with the junk left by scanf() unless you clean it. I could have done a better job by using fget() but I was lazy so I used a quick fix (thanks Stack Overflow!). 
+
+\item I got better at debugging. I especially got better at locating segmentation faults. One thing I did not do during the project was aggressively checking for errors because I was lazy and only did it at the end as a touch-up. It could have saved me hours of debugging. 

@@ -1,0 +1,8 @@
+\section{Lessons Learnt}
+The program should prompt you to enter one of three choices. Proceed. Note that the program can only deal with ASCII files as of now. 
+\item \textbf{Code Validation}\newline
+Just because the code compiles does not mean it does what you want it to do. Always write tests with synthetic data. 
+\item \textbf{Exploit the strengths of a language} 
+Exploit the data structures in different languages - use Racket for easy implementation to solidify understanding, use C for speed and low-level manipulation. Exploit the deterministic nature of Huffman tree when saving the tree.
+\item Simple code sometimes has a high price tag (see point 3 for detail).
+\item There is nothing more motivating
